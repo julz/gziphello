@@ -8,15 +8,6 @@ spec:
       annotations:
         autoscaling.knative.dev/targetBurstCapacity: "0"
         autoscaling.knative.dev/minScale: "1"
-        # sidecar.istio.io/inject: "true"
-        # sidecar.istio.io/interceptionMode: "NONE"
-        # status.sidecar.istio.io/port: "0"
-        # sidecar.istio.io/rewriteAppHTTPProbers: "false"
-        # proxy.istio.io/config: |
-        #   proxyMetadata:
-        #     OUTPUT_CERTS: /etc/istio-certs
-        # sidecar.istio.io/userVolume: '[{"name": "istio-certs", "emptyDir": {"medium": "Memory"}}]'
-        # sidecar.istio.io/userVolumeMount: '[{"name": "istio-certs", "mountPath": "/etc/istio-certs"}]'
     spec:
       containerConcurrency: 1
       containers:
